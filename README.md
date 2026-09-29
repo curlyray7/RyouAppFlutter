@@ -32,7 +32,7 @@ Ce qui sert à plusieurs fonctionnalités va dans `core/` (technique) ou `shared
 lib/
 ├── main.dart                  # point d'entrée
 ├── core/
-│   ├── theme/                 # thème Dart généré depuis ryou-tokens.json (RYOU-15)
+│   ├── theme/                 # thème Dart généré depuis ryou_tokens.json (RYOU-15)
 │   ├── router/                # navigation et redirections selon l'état de connexion
 │   ├── firebase/              # instances Firebase, initialisation, émulateur local
 │   └── errors/                # erreurs métier communes
@@ -52,7 +52,7 @@ lib/
 test/                          # même arborescence que lib/
 functions/                     # Cloud Functions Firebase (push FCM, nettoyage des données)
 tool/                          # scripts de développement (génération du thème)
-assets/tokens/                 # design tokens (ryou-tokens.json)
+assets/tokens/                 # design tokens (ryou_tokens.json)
 ```
 
 ### Règles
@@ -60,7 +60,7 @@ assets/tokens/                 # design tokens (ryou-tokens.json)
 - **Pas d'import entre fonctionnalités.** Ce qui doit être partagé remonte dans `core/` ou `shared/`.
 - **Pas d'appel direct à Firebase dans l'UI.** Les écrans passent par les repositories de `data/`. Dans les tests, on remplace ces repositories par des versions factices.
 - **Pas de texte en dur dans les widgets.** Tous les textes affichés sont dans `lib/l10n/`.
-- **Pas de couleur ni de police en dur.** Elles viennent du thème, lui-même généré depuis `assets/tokens/ryou-tokens.json`.
+- **Pas de couleur ni de police en dur.** Elles viennent du thème, lui-même généré depuis `assets/tokens/ryou_tokens.json`.
 - **Pas de secret dans le repo.** `lib/firebase_options.dart` reste à la racine de `lib/`, exclu par le `.gitignore`. Chaque machine le régénère avec `flutterfire configure`.
 
 ### Structure Firestore
@@ -76,7 +76,7 @@ assets/tokens/                 # design tokens (ryou-tokens.json)
 
 | Sujet | Choix | Statut |
 |---|---|---|
-| State management | Riverpod | à confirmer |
+| State management | Riverpod | décidé (29/09/2026) |
 | Navigation | go_router | à confirmer |
 | Modèles | freezed + json_serializable | à confirmer |
 | Cloud Functions | TypeScript | à confirmer |
