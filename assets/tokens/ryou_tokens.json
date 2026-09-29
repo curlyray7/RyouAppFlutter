@@ -1,0 +1,376 @@
+{
+  "$meta": {
+    "name": "Ryou",
+    "version": "1.0.0",
+    "unit": "logical px (dp / pt)"
+  },
+  "color": {
+    "light": {
+      "primary": "#E8420A",
+      "onPrimary": "#FFFFFF",
+      "primaryInk": "#C23600",
+      "background": "#FFFAF7",
+      "surface": "#FFFFFF",
+      "surfaceVariant": "#FBEEE6",
+      "onSurface": "#3D1A00",
+      "onSurfaceVariant": "#7A5540",
+      "outline": "#F0E1D6",
+      "outlineStrong": "#E6CDBD",
+      "error": "#B8321B",
+      "errorContainer": "#FDE4DE",
+      "success": "#2E8A57"
+    },
+    "dark": {
+      "primary": "#FF6B35",
+      "onPrimary": "#2A0E00",
+      "primaryInk": "#FF9466",
+      "background": "#1A110C",
+      "surface": "#271A12",
+      "surfaceVariant": "#34241A",
+      "onSurface": "#FFF3EA",
+      "onSurfaceVariant": "#D2B9A8",
+      "outline": "#3E2C20",
+      "outlineStrong": "#5A4131",
+      "error": "#FF8A73",
+      "errorContainer": "#3D1C16",
+      "success": "#4CB57B"
+    },
+    "mood": {
+      "joy": {
+        "family": "sun",
+        "label": "Joyeux·se",
+        "emoji": "😄",
+        "light": {
+          "fill": "#FFC53D",
+          "edge": "#B98A04",
+          "tint": "#FEEECF",
+          "onTint": "#3D1A00"
+        },
+        "dark": {
+          "fill": "#FFC53D",
+          "edge": "#FFC53D",
+          "tint": "#3F2D00",
+          "onTint": "#FFF3EA"
+        },
+        "asset": "assets/faces/joy.svg",
+        "accessory": "grand sourire + étincelles"
+      },
+      "love": {
+        "family": "sun",
+        "label": "Amoureux·se",
+        "emoji": "🥰",
+        "light": {
+          "fill": "#FF6B8B",
+          "edge": "#F15E7F",
+          "tint": "#FFEAED",
+          "onTint": "#3D1A00"
+        },
+        "dark": {
+          "fill": "#FF6B8B",
+          "edge": "#FF6B8B",
+          "tint": "#4D1F28",
+          "onTint": "#FFF3EA"
+        },
+        "asset": "assets/faces/love.svg",
+        "accessory": "yeux en cœur"
+      },
+      "hype": {
+        "family": "sun",
+        "label": "Surexcité·e",
+        "emoji": "🤩",
+        "light": {
+          "fill": "#FF9F45",
+          "edge": "#D77A0E",
+          "tint": "#FFECDE",
+          "onTint": "#3D1A00"
+        },
+        "dark": {
+          "fill": "#FF9F45",
+          "edge": "#FF9F45",
+          "tint": "#492703",
+          "onTint": "#FFF3EA"
+        },
+        "asset": "assets/faces/hype.svg",
+        "accessory": "yeux étoiles + bras levés"
+      },
+      "zen": {
+        "family": "soft",
+        "label": "Zen",
+        "emoji": "😌",
+        "light": {
+          "fill": "#4CC38A",
+          "edge": "#25A56E",
+          "tint": "#DCF9E7",
+          "onTint": "#3D1A00"
+        },
+        "dark": {
+          "fill": "#4CC38A",
+          "edge": "#4CC38A",
+          "tint": "#0D3A25",
+          "onTint": "#FFF3EA"
+        },
+        "asset": "assets/faces/zen.svg",
+        "accessory": "yeux fermés + feuille"
+      },
+      "hug": {
+        "family": "soft",
+        "label": "Câlin ?",
+        "emoji": "🤗",
+        "light": {
+          "fill": "#7FD1E8",
+          "edge": "#4A9CB2",
+          "tint": "#DFF5FB",
+          "onTint": "#3D1A00"
+        },
+        "dark": {
+          "fill": "#7FD1E8",
+          "edge": "#7FD1E8",
+          "tint": "#17353D",
+          "onTint": "#FFF3EA"
+        },
+        "asset": "assets/faces/hug.svg",
+        "accessory": "bras tendus + petit cœur"
+      },
+      "flat": {
+        "family": "soft",
+        "label": "À plat",
+        "emoji": "😴",
+        "light": {
+          "fill": "#A8A29E",
+          "edge": "#96908C",
+          "tint": "#F1F0EE",
+          "onTint": "#3D1A00"
+        },
+        "dark": {
+          "fill": "#A8A29E",
+          "edge": "#A8A29E",
+          "tint": "#32302E",
+          "onTint": "#FFF3EA"
+        },
+        "asset": "assets/faces/flat.svg",
+        "accessory": "Zzz + paupières lourdes"
+      },
+      "sad": {
+        "family": "storm",
+        "label": "Le cœur lourd",
+        "emoji": "😢",
+        "light": {
+          "fill": "#4A7BE0",
+          "edge": "#4A7BE0",
+          "tint": "#E9F0FF",
+          "onTint": "#3D1A00"
+        },
+        "dark": {
+          "fill": "#4A7BE0",
+          "edge": "#4A7BE0",
+          "tint": "#1D2F53",
+          "onTint": "#FFF3EA"
+        },
+        "asset": "assets/faces/sad.svg",
+        "accessory": "larme"
+      },
+      "stress": {
+        "family": "storm",
+        "label": "Sous pression",
+        "emoji": "😬",
+        "light": {
+          "fill": "#8B6FE0",
+          "edge": "#8B6FE0",
+          "tint": "#F0EEFF",
+          "onTint": "#3D1A00"
+        },
+        "dark": {
+          "fill": "#8B6FE0",
+          "edge": "#8B6FE0",
+          "tint": "#322950",
+          "onTint": "#FFF3EA"
+        },
+        "asset": "assets/faces/stress.svg",
+        "accessory": "goutte de sueur + yeux ronds"
+      },
+      "mad": {
+        "family": "storm",
+        "label": "Agacé·e",
+        "emoji": "😤",
+        "light": {
+          "fill": "#E5484D",
+          "edge": "#E5484D",
+          "tint": "#FFEBE9",
+          "onTint": "#3D1A00"
+        },
+        "dark": {
+          "fill": "#E5484D",
+          "edge": "#E5484D",
+          "tint": "#4E201F",
+          "onTint": "#FFF3EA"
+        },
+        "asset": "assets/faces/mad.svg",
+        "accessory": "nuage de fumée"
+      }
+    },
+    "moodFamily": {
+      "sun": {
+        "label": "Soleil",
+        "meaning": "positif",
+        "moods": [
+          "joy",
+          "love",
+          "hype"
+        ]
+      },
+      "soft": {
+        "label": "Douceur",
+        "meaning": "calme / besoin",
+        "moods": [
+          "zen",
+          "hug",
+          "flat"
+        ]
+      },
+      "storm": {
+        "label": "Orage",
+        "meaning": "difficile",
+        "moods": [
+          "sad",
+          "stress",
+          "mad"
+        ]
+      }
+    },
+    "moodUsage": {
+      "fill": "Remplissage (calendrier, segments, puces). Jamais de texte dessus.",
+      "edge": "Contour 1.5–2 px du fill en mode clair, ≥ 3:1 sur crème. En sombre edge = fill.",
+      "tint": "Fond de carte, texte onTint.",
+      "calendarSelection": "Contour crème #FFFAF7 3 px (+ filet #3D1A00 2 px en clair). Jamais orange.",
+      "brandOnly": "#E8420A réservé à la marque et aux actions.",
+      "calendarCell": "Visage 38 px sur tint (vue individuelle) ou icône météo (vue Nous). Jamais de couleur seule."
+    },
+    "coupleWeather": {
+      "rule": "sun = deux humeurs famille sun · rain = au moins une humeur famille storm · mix = sinon",
+      "sun": {
+        "label": "Grand soleil",
+        "asset": "assets/faces/weather-sun.svg",
+        "tint": "#FEEECF",
+        "tintDark": "#3F2D00"
+      },
+      "mix": {
+        "label": "Éclaircies",
+        "asset": "assets/faces/weather-mix.svg",
+        "tint": "#EEF1F4",
+        "tintDark": "#2B2F33"
+      },
+      "rain": {
+        "label": "Averses",
+        "asset": "assets/faces/weather-rain.svg",
+        "tint": "#E9F0FF",
+        "tintDark": "#1D2F53"
+      }
+    }
+  },
+  "typography": {
+    "fontFamily": "Nunito",
+    "display": {
+      "size": 34,
+      "weight": 800,
+      "lineHeight": 1.1
+    },
+    "headline": {
+      "size": 30,
+      "weight": 800,
+      "lineHeight": 1.15
+    },
+    "title": {
+      "size": 24,
+      "weight": 800,
+      "lineHeight": 1.15
+    },
+    "titleSmall": {
+      "size": 19,
+      "weight": 800,
+      "lineHeight": 1.2
+    },
+    "button": {
+      "size": 19,
+      "weight": 800,
+      "lineHeight": 1
+    },
+    "body": {
+      "size": 17,
+      "weight": 400,
+      "lineHeight": 1.45
+    },
+    "bodyStrong": {
+      "size": 16,
+      "weight": 600,
+      "lineHeight": 1.4
+    },
+    "label": {
+      "size": 14,
+      "weight": 700,
+      "lineHeight": 1.3
+    },
+    "caption": {
+      "size": 13,
+      "weight": 600,
+      "lineHeight": 1.35
+    }
+  },
+  "radius": {
+    "xs": 8,
+    "sm": 14,
+    "md": 18,
+    "lg": 24,
+    "xl": 30,
+    "xxl": 36,
+    "pill": 999
+  },
+  "spacing": {
+    "xxs": 4,
+    "xs": 8,
+    "sm": 12,
+    "md": 16,
+    "lg": 20,
+    "xl": 24,
+    "xxl": 32,
+    "xxxl": 40
+  },
+  "elevation": {
+    "card": {
+      "x": 0,
+      "y": 8,
+      "blur": 24,
+      "color": "#3D1A00",
+      "opacity": 0.07
+    },
+    "button": {
+      "x": 0,
+      "y": 8,
+      "blur": 20,
+      "color": "#E8420A",
+      "opacity": 0.28
+    },
+    "overlay": {
+      "x": 0,
+      "y": 16,
+      "blur": 40,
+      "color": "#3D1A00",
+      "opacity": 0.18
+    }
+  },
+  "size": {
+    "minTouchTarget": 44,
+    "buttonHeight": 58,
+    "fieldHeight": 56,
+    "tabBarHeight": 88,
+    "avatarSm": 32,
+    "avatarMd": 46,
+    "avatarLg": 62,
+    "calendarCell": {
+      "width": "1fr",
+      "height": 54,
+      "icon": 38,
+      "radius": 14
+    },
+    "moodIconMin": 24
+  }
+}
