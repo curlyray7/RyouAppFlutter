@@ -1,4 +1,4 @@
-package com.example.ryou_app
+package com.rayane.ryou
 
 import io.flutter.embedding.android.FlutterActivity
 
