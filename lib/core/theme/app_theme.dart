@@ -5,16 +5,6 @@ import 'app_colors.dart';
 import 'app_typography.dart';
 import 'theme_extensions.dart';
 
-/// Thèmes clair et sombre de Ryou.
-///
-/// Exemple (dans `main.dart`) :
-/// ```dart
-/// MaterialApp(
-///   theme: AppTheme.light(),
-///   darkTheme: AppTheme.dark(),
-///   themeMode: ThemeMode.system, // suit le réglage du téléphone
-/// );
-/// ```
 abstract final class AppTheme {
   static ThemeData light() => _build(
     Brightness.light,
@@ -65,10 +55,33 @@ abstract final class AppTheme {
       scaffoldBackgroundColor: p.background,
       fontFamily: AppTypography.fontFamily,
       textTheme: AppTypography.textTheme,
+      // Champs de formulaire : blancs sur fond crème, rayon md (18).
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        floatingLabelBehavior: FloatingLabelBehavior.always,
+        fillColor: p.surface,
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 18,
+        ),
+        border: _fieldBorder(p.outlineStrong),
+        enabledBorder: _fieldBorder(p.outlineStrong),
+        focusedBorder: _fieldBorder(p.primary, width: 2),
+        errorBorder: _fieldBorder(p.error),
+        focusedErrorBorder: _fieldBorder(p.error, width: 2),
+      ),
       extensions: [
         RyouColors(primaryInk: p.primaryInk, success: p.success),
         MoodColors(moods),
       ],
     );
   }
+
+  static OutlineInputBorder _fieldBorder(Color color, {double width = 1}) =>
+    OutlineInputBorder(
+      borderRadius: BorderRadius.circular(18),
+      borderSide: BorderSide(color: color, width: width),
+    );
 }
+
+
