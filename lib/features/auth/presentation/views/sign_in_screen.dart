@@ -73,7 +73,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
         centerTitle: true,
-        title: Image.asset('assets/images/ryou_logo2.png', height: 100),
+        title: Image.asset('assets/images/ryou_wordmark.png', height: 100),
       ),
       body: Padding(
         padding: const EdgeInsets.all(25),
