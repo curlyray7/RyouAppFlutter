@@ -70,6 +70,9 @@ abstract final class AppTheme {
         errorBorder: _fieldBorder(p.error),
         focusedErrorBorder: _fieldBorder(p.error, width: 2),
       ),
+      appBarTheme: AppBarTheme(
+        backgroundColor: p.background,
+      ),
       extensions: [
         RyouColors(primaryInk: p.primaryInk, success: p.success),
         MoodColors(moods),
